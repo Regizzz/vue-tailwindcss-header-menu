@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="px-8 py-2 max-w-md mx-auto sm:max-w-xl lg:max-w-full">
+    <NavBar class="z-10" />
+    <MainShit class="z-0"/>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import MainShit from './components/MainShit.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    MainShit
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
